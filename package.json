@@ -1,0 +1,43 @@
+{
+  "name": "bytechcoin-utils",
+  "version": "0.0.4",
+  "description": "A Node.js collection of utilities useful for BytechCoin developers",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "npm install && standard && node tests/tests.js"
+  },
+  "keywords": [
+    "BytechCoin",
+    "Utilities"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bytechcoin/bytechcoin-utils.git"
+  },
+  "author": "Brandon Lehmann <brandonlehmann@gmail.com>",
+  "contributors": [
+    "zpalmtree <22151537+zpalmtree@users.noreply.github.com>"
+  ],
+  "license": "GPL-3.0",
+  "optionalDependencies": {
+    "bytechcoin-crypto": "0.0.3"
+  },
+  "dependencies": {
+    "crc": "^3.8.0",
+    "get-random-values": "^1.2.0",
+    "numeral": "^2.0.6",
+    "secure-random-string": "^1.1.0",
+    "varint-decoder": "^0.1.1"
+  },
+  "standard": {
+    "ignore": [
+      "lib/crypto.js",
+      "lib/nacl-fast-cn.js",
+      "lib/ringsigs.js"
+    ]
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}
